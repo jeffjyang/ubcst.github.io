@@ -1,0 +1,26 @@
+name: UBC Supermileage
+description: The University of British Columbia Supermileage Team
+url: http://supermileage.ca
+dateformat: "%-d %B, %Y"
+
+paginate: 8
+paginate_path: /page/:num/
+
+exclude: [
+  CNAME,
+  README.md,
+  bower.json,
+  Gemfile,
+  Gemfile.lock,
+  gruntfile.js,
+  package.json,
+  style.less,
+  bower_components,
+  node_modules,
+  styles
+]
+
+highlighter: pygments
+
+gems:
+  - jekyll-sitemap

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+  <div class="post-preview">
+    <h3><a class="subtle-link" href="{{ post.url}}">
+      {{ post.title }}
+    </a></h3>
+    <p class="text-muted">{{ post.date | date: site.dateformat }}</p>
+    {{ post.excerpt }}
+    <p><a href="{{ post.url }}">Continue reading...</a></p>
+  </div>
+{% endfor %}
+
+<nav>
+  <ul class="pager">
+    {% if paginator.next_page %}
+      <li class="previous">
+        <a href="{{ paginator.next_page_path }}">Older</a>
+      </li>
+    {% endif %}
+    {% if paginator.previous_page %}
+      <li class="next">
+        <a href="{{ paginator.previous_page_path | remove:'index.html' }}">Newer</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

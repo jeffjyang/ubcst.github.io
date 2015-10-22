@@ -1,0 +1,20 @@
+# Grunt
+dist/
+
+# npm
+node_modules/
+
+# Bower
+bower_components/
+
+# bundler
+Gemfile.lock
+
+# jekyll
+_site/
+
+# vim
+*.swp
+
+# OS X
+.DS_Store

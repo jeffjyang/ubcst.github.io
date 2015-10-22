@@ -1,0 +1,15 @@
+{
+  "name": "supermileage.github.io",
+  "version": "0.0.0",
+  "authors": [
+    "Michael Thiesen <micthiesen@gmail.com>"
+  ],
+  "description": "UBC Supermileage Website",
+  "homepage": "http://supermileage.ca",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3",
+    "components-font-awesome": "~4",
+    "fullcalendar": "~2.3.0"
+  }
+}
