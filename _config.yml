@@ -3,9 +3,6 @@ description: The University of British Columbia Supermileage Team
 url: http://supermileage.ca
 dateformat: "%-d %B, %Y"
 
-paginate: 8
-paginate_path: /page/:num/
-
 exclude: [
   CNAME,
   README.md,

@@ -70,7 +70,8 @@ module.exports = function(grunt) {
       jekyll: {
         files: [
           '*.html',
-          '*.js',
+          'assets/*.js',
+          'assets/*.css',
           '**/*.md',
           '_config.yml',
           '_drafts/*.*',
