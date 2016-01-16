@@ -1,20 +1,5 @@
-# Grunt
-dist/
+_site
 
-# npm
-node_modules/
+.sass-cache
 
-# Bower
-bower_components/
-
-# bundler
-Gemfile.lock
-
-# jekyll
-_site/
-
-# vim
-*.swp
-
-# OS X
-.DS_Store
+.jekyll-metadata

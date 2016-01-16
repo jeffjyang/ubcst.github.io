@@ -7,26 +7,27 @@ Please see [this wiki page](https://github.com/supermileage/supermileage.github.
 
 Clone the repo onto your own computer.
 
-### Dependencies
+### Linux/OSX
+
 Install the following (in order):
-- [npm](https://docs.npmjs.com/getting-started/installing-node)
 - [Ruby](https://www.ruby-lang.org/en/downloads/)
 - [RubyGems](https://rubygems.org/pages/download)
-- [Bundler](http://bundler.io/) (`$ gem install bundler`)
 
-### More Dependencies
 Navigate to the repo on your computer in terminal/cmd and run the following commands:
-- `$ npm install`
-- `$ bower install`
-- `$ bundle install`
+- `$ gem install jekyll`
+
+### Windows
+
+You can follow the Linux/OSX instructions, or:
+
+- Open a command prompt (cmd.exe) with administrator access
+- Run '@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin' (you can right click paste in CMD)
+- Close and reopen cmd
+- Run `choco install ruby -y`
+- Run `gem install jekyll`
 
 ## Running the Project
 In the same directory, run:
-- `$ grunt`
+- `$ jekyll serve`
 
-You can now browse to [localhost:8000](http://localhost:8000/) to view the site. There's no need to restart grunt after you make changes, it will update automatically.
-
-## Building the Project
-- `$ grunt build`
-
-If you're not running the `$ grunt` command which watches for changes, run this before each commit. It will build and minify the CSS file (`build/style.css`).
+You can now browse to [localhost:4000](http://localhost:4000/) to view the site. There's no need to restart jekyll after you make changes, it will update automatically.
