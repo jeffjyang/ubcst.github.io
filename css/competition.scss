@@ -24,3 +24,15 @@ img {
 		text-align: center;
 	}
 }
+
+h3 {
+	&.car-type {
+		margin-top: 0.5em;
+	}
+}
+
+a {
+	&#proto-results, &#urban-results {
+		top: -90px;
+	}
+}
