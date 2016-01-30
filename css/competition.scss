@@ -1,0 +1,26 @@
+---
+---
+img { 
+	max-width: 100%; 
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	&.logo {
+		height: 100px;
+	}
+	&.car-type {
+		height: 150px;
+	} 
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
+}
+
+.table {
+	td {
+		text-align: center;
+	}
+}
