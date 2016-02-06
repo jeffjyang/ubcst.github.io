@@ -20,3 +20,16 @@
 
 <!-- custom script -->
 <script src="js/main.js"></script>
+
+{% if page.fullcalendar %}
+	<script src="assets/moment.min.js"></script>
+	<script src="assets/fullcalendar.min.js"></script>
+	<script src="js/calendar.js"></script>
+	<script src="assets/gcal.js"></script>
+{% endif %}
+
+{% if page.custom_js %}
+	{% for js in page.custom_js %}
+		<script type="text/javascript" src="/js/{{ js }}.js"></script>
+	{% endfor %}
+{% endif %}
