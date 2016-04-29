@@ -17,7 +17,7 @@ a {
   &.anchor {
     display: block;
     position: relative;
-    top: -50px;
+    top: -100px;
     visibility: hidden;
   }
 }
@@ -215,7 +215,7 @@ p {
 /* follow us */
 
 .fb-btn-container {
-  top: 105px;
+  top: 115px;
   left: -100px;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -225,7 +225,7 @@ p {
 
 .youtube-btn-container {
   top: 300px;
-  left: 165px;
+  left: 180px;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
@@ -233,7 +233,7 @@ p {
 }
 
 .twitter-btn-container {
-  top: 105px;
+  top: 115px;
   right: -105px;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
