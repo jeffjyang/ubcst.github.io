@@ -119,8 +119,6 @@ p {
     line-height: 3.6em;
 }
 
-.navbar-fixed-top {}
-
 .navbar-inverse {
     background: #111;
 }
@@ -494,8 +492,6 @@ p {
     margin-top: 125px;
 }
 
-/*contact/donate*/
-
 /*footer*/
 
 .footer {
@@ -523,6 +519,13 @@ p {
 }
 
 /*footer*/
+
+//Posts
+.post-preview {
+  img {
+    width: 100%;
+  }
+}
 
 @media (min-width: 1600px) {
     .about.spacer {

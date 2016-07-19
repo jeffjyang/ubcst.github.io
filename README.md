@@ -13,9 +13,9 @@ Install the following (in order):
 - [Ruby](https://www.ruby-lang.org/en/downloads/)
 - [RubyGems](https://rubygems.org/pages/download)
 
-Navigate to the repo on your computer in terminal/cmd and run the following commands:
+Navigate to the repo on your computer in terminal and run the following commands:
 - `$ gem install jekyll`
-
+- `$ gem install jekyll-paginate`
 ### Windows
 
 You can follow the Linux/OSX instructions, or:
@@ -23,8 +23,10 @@ You can follow the Linux/OSX instructions, or:
 - Open a command prompt (cmd.exe) with administrator access
 - Run '@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin' (you can right click paste in CMD)
 - Close and reopen cmd
-- Run `choco install ruby -y`
-- Run `gem install jekyll`
+- Run the following commands:
+- `choco install ruby -y`
+- `gem install jekyll`
+- `gem install jekyll-paginate`
 
 ## Running the Project
 In the same directory, run:

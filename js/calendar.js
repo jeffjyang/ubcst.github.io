@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   };
 
-  $('#calendar').fullCalendar({
+  $('#calendar-container').fullCalendar({
     events: { googleCalendarId: 'supermileage.ca_60r3vil83809c8mlmoji4b3vgo@group.calendar.google.com' },
     googleCalendarApiKey: 'AIzaSyApwSq9zcS0jFGIVzLkzgsVbaG5xSkOcAk',
     header: {
