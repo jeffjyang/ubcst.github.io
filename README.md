@@ -1,4 +1,4 @@
-# ubcst.github.io
+# [ubcst.github.io](https://ubcst.github.io)
 
 ## Writing a New Post
 Please see [this wiki page](https://github.com/supermileage/supermileage.github.io/wiki/Writing-a-New-Post) for instructions. If you are only going to be writing posts, you can ignore the rest of this readme.
