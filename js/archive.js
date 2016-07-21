@@ -8,8 +8,5 @@ var ias = $.ias({
 // Add a loader image which is displayed during loading
 ias.extension(new IASSpinnerExtension());
 
-// Add a link after page 2 which has to be clicked to load the next page
-// ias.extension(new IASTriggerExtension({offset: 2}));
-
 // Add a text when there are no more pages left to load
 ias.extension(new IASNoneLeftExtension({text: "You reached the end"}));

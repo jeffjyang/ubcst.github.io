@@ -14,8 +14,8 @@ Install the following (in order):
 - [RubyGems](https://rubygems.org/pages/download)
 
 Navigate to the repo on your computer in terminal and run the following commands:
-- `$ gem install jekyll`
-- `$ gem install jekyll-paginate`
+- `gem install bundler`
+- `bundle install`
 ### Windows
 
 You can follow the Linux/OSX instructions, or:
@@ -25,8 +25,8 @@ You can follow the Linux/OSX instructions, or:
 - Close and reopen cmd
 - Run the following commands:
 - `choco install ruby -y`
-- `gem install jekyll`
-- `gem install jekyll-paginate`
+- `gem install bundler`
+- `bundle install`
 
 ## Running the Project
 In the same directory, run:

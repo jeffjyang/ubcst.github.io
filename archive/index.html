@@ -1,9 +1,8 @@
 ---
-title: Events
-fullcalendar: true
+title: Archive
 paginate: true
 custom_js:
- - events
+ - archive
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +31,7 @@ custom_js:
         <!-- Nav -->
         <div class="navbar-collapse  collapse">
           <ul class="nav navbar-nav navbar-right scroll">
-              <li><a href="#calendar">Calendar</a></li>
-              <li><a href="#events">Events</a></li>
+              <li><a href="#archive">Archive</a></li>
           </ul>
         </div>
       </div>
@@ -41,38 +39,25 @@ custom_js:
 
   </div>
 </div>
-
-<!-- Calendar -->
+    
 <div class="container first">
-  <a class="anchor" name="calendar" id="calendar"></a>
-  <div class="col-md-12">
-    <h2 class="text-center">CALENDAR</h2>
-  </div>
-  <div class="col-md-12">
-    <div id="calendar-container"></div>
-  </div>
-</div>
-
-<!-- Events -->
-<div class="container">
-  <a class="anchor" name="events" id="events"></a>
+  <a class="anchor" name="archive" id="archive"></a>
   <div class="col-md-12 spacer">
-    <h2 class="text-center">EVENTS</h2>
+    <h2 class="text-center">ARCHIVE</h2>    
     <div class="posts">
-      {% for post in paginator.posts %}
+        {% for post in paginator.posts %}
         <div class="post-preview">
-          <h3><a class="subtle-link" href="{{ post.url}}">
+            <h3><a class="subtle-link" href="{{ post.url}}">
             {{ post.title }}
-          </a></h3>
-          <p class="text-muted">{{ post.date | date: site.dateformat }}</p>
-          {{ post.excerpt }}
-          <p><a href="{{ post.url }}">Continue reading...</a></p>
+            </a></h3>
+            <p class="text-muted">{{ post.date | date: site.dateformat }}</p>
+            {{ post.excerpt }}
+            <p><a href="{{ post.url }}">Continue reading...</a></p>
         </div>
-      {% endfor %}
+        {% endfor %}
     </div>
   </div>
-
-  <div class="pagination">
+ <div class="pagination">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
     {% else %}
@@ -85,10 +70,5 @@ custom_js:
       <span class="next ">Next</span>
     {% endif %}
   </div>
-
 </div>
-
-{% include footer.html %}
-
-</body>
-</html>
+  {% include footer.html %}

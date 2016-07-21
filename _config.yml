@@ -4,6 +4,6 @@ url: http://supermileage.ca
 dateformat: "%-d %B, %Y"
 title: UBC Supermileage
 paginate: 10
-paginate_path: "/events/page:num/"
+paginate_path: "/archive/page:num/"
 gems:
  - jekyll-paginate
