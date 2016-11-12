@@ -419,7 +419,8 @@ p {
 
 .navbar-brand {
     height: 100%;
-    padding: 0px 0px;
+    padding: 0;
+    line-height: 75px;
     img {
         height: 100%;
     }
@@ -537,9 +538,7 @@ p {
     body {
         font: 300 13px/13px Roboto,Arial,Helvetica;
     }
-    .navbar-brand {
-        padding-top: 11px;
-    }
+    
     .process ul li {
         margin: 0 0.5em;
     }
@@ -613,12 +612,7 @@ p {
     .navbar-nav > li > a {
         line-height: 1em;
     }
-    .navbar-brand {
-        padding: 7px;
-        img {
-            height: 37px;
-        }
-    }
+    
     .navbar-toggle {
         margin-top: 12px;
     }
