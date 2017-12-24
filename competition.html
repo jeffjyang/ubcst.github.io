@@ -8,44 +8,11 @@ custom_css:
 
 {% include head.html %}
 
+
 <body>
 <div class="topbar animated fadeInLeftBig"></div>
+{% include navbar.html %}
 
-<!-- Header Starts -->
-<div id="top" class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- Logo Starts -->
-              <a class="navbar-brand" href="/">UBC SUPERMILEAGE</a>
-              <!-- #Logo Ends -->
-
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-            </div>
-
-            <!-- Nav Starts -->
-            <div class="navbar-collapse  collapse">
-              <ul class="nav navbar-nav navbar-right scroll">
-                 <li><a href="#sema">Shell Eco Marathon</a></li>
-                 <li><a href="#sae">SAE</a></li>
-                 <li><a href="#proto-results">Prototype Results</a></li>
-                 <li><a href="#urban-results">Urban Results</a></li>
-              </ul>
-            </div>
-            <!-- #Nav Ends -->
-
-          </div>
-        </div>
-
-      </div>
-    </div>
 
 <!-- #Header -->
 
@@ -90,7 +57,7 @@ custom_css:
     <a class="anchor" name="urban-results" id="urban-results"></a>
     <img class="car-type" src="images/competition/urban.png">
     <h3 class="text-center car-type">URBAN CONCEPT</h3>
-    
+
     <!-- It's suprisingly hard to make markdown render tables in html,
     markdownify (used in events.html) doesn't work, so old fashions html tables it is.-->
     <table class="table table-bordered">

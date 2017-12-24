@@ -1,5 +1,5 @@
 ---
-custom_js: 
+custom_js:
 - index
 ---
 <!DOCTYPE html>
@@ -7,44 +7,14 @@ custom_js:
 
 {% include head.html %}
 
+
 <body>
 <div class="topbar animated fadeInLeftBig"></div>
+{% include navbar.html %}
 
 <!-- Header Starts -->
 
-<!-- TODO: Fix navbar logo, drop down menu at small screen sizes -->
-<div id="top" class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- Logo Starts -->
-              <a class="navbar-brand navbar-gototop" href="#top">UBC SUPERMILEAGE</a>
-              <!-- #Logo Ends -->
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-
-            <!-- Nav Starts -->
-            <div class="navbar-collapse  collapse">
-              <ul class="nav navbar-nav navbar-right scroll">
-                 <li><a href="#about">About</a></li>
-                 <li><a href="#works">Links</a></li>
-                 <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <!-- #Nav Ends -->
-
-          </div>
-        </div>
-
-      </div>
-    </div>
 
 <!-- #Header -->
 <div id="background">
@@ -81,7 +51,7 @@ custom_js:
     </div>
     <div class="col-sm-6 wowload fadeInRight">
       <h4><!-- <i class="fa fa-code"></i> -->What we do</h4>
-      <p>Fuelathon competitions provide engineering and technology students with a challenging design project that involves the development and construction of either a single-person, fuel-efficient vehicle or a larger four wheeled urban concept car. Students build gas-powered fuel efficient vehicles, and have the opportunity to set a world fuel economy record and increase public awareness of fuel economy and sustainability. Students become more sensitive to environmental issues as well as develop important project management skills.</p>    
+      <p>Fuelathon competitions provide engineering and technology students with a challenging design project that involves the development and construction of either a single-person, fuel-efficient vehicle or a larger four wheeled urban concept car. Students build gas-powered fuel efficient vehicles, and have the opportunity to set a world fuel economy record and increase public awareness of fuel economy and sustainability. Students become more sensitive to environmental issues as well as develop important project management skills.</p>
     </div>
   </div>
 </div>
@@ -91,39 +61,42 @@ custom_js:
 </div>
 
 <!-- works -->
-<div id="works"  class="clearfix grid"> 
+<div id="works"  class="clearfix grid">
+    <a href="./theteam.html">
     <figure class="effect-oscar  wowload fadeIn">
         <img src="images/0.jpg" alt="img01"/>
         <figcaption>
-            <h2>Our Team</h2>
+            <h2>The Team</h2><br>
             <p>Nancy likes to play with crayons and pencils<br>
-            <a href="images/0.jpg" title="1" data-gallery>View more</a></p>            
         </figcaption>
     </figure>
+    </a>
+
     <a href="./ourcars.html">
       <figure class="effect-oscar wowload fadeInUp">
           <img src="images/0.jpg" alt="img01"/>
           <figcaption>
               <h2>Our Cars</h2><br>
-              <p>Nancy likes to play with crayons and pencils<br></p>            
+              <p>Nancy likes to play with crayons and pencils<br></p>
           </figcaption>
       </figure>
     </a>
+
     <a href="./competition.html">
       <figure class="effect-oscar  wowload fadeInUp">
         <img src="images/0.jpg" alt="img01"/>
         <figcaption>
             <h2>Competition</h2><br>
-            <p>Nancy likes to play with crayons and pencils<br></p>            
+            <p>Nancy likes to play with crayons and pencils<br></p>
         </figcaption>
       </figure>
     </a>
-    <a href="./history.html">
+    <a href="./blog/index.html">
      <figure class="effect-oscar wowload fadeInUp">
         <img src="images/0.jpg" alt="img01"/>
         <figcaption>
-            <h2>History</h2>
-            <p>Nancy likes to play with crayons and pencils<br>       
+            <h2>Blog</h2>
+            <p>Nancy likes to play with crayons and pencils<br>
         </figcaption>
       </figure>
     </a>
@@ -132,7 +105,7 @@ custom_js:
         <img src="images/0.jpg" alt="img01"/>
         <figcaption>
             <h2>Events</h2>
-            <p>Nancy likes to play with crayons and pencils<br>          
+            <p>Nancy likes to play with crayons and pencils<br>
         </figcaption>
       </figure>
      </a>
@@ -141,7 +114,7 @@ custom_js:
         <figcaption>
             <h2>Media</h2>
             <p>Nancy likes to play with crayons and pencils<br>
-            <a href="images/0.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="images/0.jpg" title="1" data-gallery>View more</a></p>
         </figcaption>
     </figure>
     <figure class="effect-oscar wowload fadeInUp" id="followus">
@@ -162,7 +135,7 @@ custom_js:
               <a href="http://www.youtube.com/user/UBCSupermileageTeam" class="youtube-btn">
                 <i class="fa fa-youtube"></i>
               </a>
-            </div>     
+            </div>
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -170,7 +143,7 @@ custom_js:
         <figcaption>
             <h2>Sponsor Us</h2>
             <p>Nancy likes to play with crayons and pencils<br>
-            <a href="images/0.jpg" title="1" data-gallery>View more</a></p>            
+            <a href="images/0.jpg" title="1" data-gallery>View more</a></p>
         </figcaption>
     </figure>
 </div>
@@ -266,8 +239,8 @@ custom_js:
 
 <div class="container contactform center">
 <h2 class="text-center  wowload fadeInUp">Get in touch!</h2>
-  <div class="row wowload fadeInLeftBig">      
-      <div class="col-sm-6 col-sm-offset-1 col-xs-12">      
+  <div class="row wowload fadeInLeftBig">
+      <div class="col-sm-6 col-sm-offset-1 col-xs-12">
         <input type="text" placeholder="Name">
         <input type="text" placeholder="Company">
         <textarea rows="5" placeholder="Message"></textarea>
@@ -291,6 +264,9 @@ custom_js:
 
 <!-- gallery -->
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 
 </body>
 </html>

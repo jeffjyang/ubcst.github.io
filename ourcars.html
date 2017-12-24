@@ -8,60 +8,31 @@ custom_css:
 
 {% include head.html %}
 
+
+
 <body>
-<div class="topbar animated fadeInLeftBig"></div>
+    <!-- TODO not too sure what this line does -->
+    <div class="topbar animated fadeInLeftBig"></div>
+    {% include navbar.html %}
 
-<!-- Header Starts -->
-<div id="top" class="navbar-wrapper">
-      <div class="container">
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- Logo Starts -->
-              <a class="navbar-brand" href="/"><img src="/images/sm_logo.png" alt="logo"></a>
-              <!-- #Logo Ends -->
-
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-            </div>
-
-            <!-- Nav Starts -->
-            <div class="navbar-collapse  collapse">
-              <ul class="nav navbar-nav navbar-right scroll">
-                 <li ><a href="#cars">Cars</a></li>
-                 <li ><a href="#engine">Engine</a></li>
-                 <li ><a href="#chassis">Chassis</a></li>
-                 <li ><a href="#drivetrain">Drivetrain</a></li>
-                 <li ><a href="#steering">Steering</a></li>
-              </ul>
-            </div>
-            <!-- #Nav Ends -->
-
-          </div>
-        </div>
-
-      </div>
+    <div id="headerimage">
+      <img src="../images/sema-group.png" alt="SEMA 2015"/>
+      <p class="text-center">test caption</p>
     </div>
 
-<!-- #Header -->
 
 
 <!-- Our Cars -->
 <div name="cars" id="cars" class="container about first">
   <!-- <a class="anchor" name="cars" id="cars"></a> -->
-  <h1 class="text-center wowload fadeInUp">Our Cars</h1>  
-  
+  <h1 class="text-center wowload fadeInUp">Our Cars</h1>
+
     <div class="col-sm-5 wowload fadeInLeft">
     <h3 class="text-center">PROTOTYPE CLASS</h4>
     <h4 class="text-center">MARK X</h4>
       <div>
-        <p>The Prototype vehicle is a three wheeled, single-passenger vehicle meant to push the limits of fuel efficiency. It competes in the Shell Eco-Marathon, 
-          and SAE Supermileage competitions. This competition class has very few limits on design, allowing a number of creative solutions in order to achieve 
+        <p>The Prototype vehicle is a three wheeled, single-passenger vehicle meant to push the limits of fuel efficiency. It competes in the Shell Eco-Marathon,
+          and SAE Supermileage competitions. This competition class has very few limits on design, allowing a number of creative solutions in order to achieve
           extremely high fuel mileage. This year, UBC Supermileage is developing a monocoque version where the shell and chassis are integrated in one piece. </p>
       </div>
     </div>
@@ -78,8 +49,8 @@ custom_css:
       <h3 class="text-center">URBAN CONCEPT CLASS</h4>
       <h4 class="text-center">ZEPHYR</h4>
       <div>
-        <p>The Urban Concept Car is a slightly more practical vehicle meant to bridge the gap between the prototype vehicle and the vehicles you see on the road today. 
-          It only competes in the Shell Eco-Marathon. Teams are required to design the vehicle with a minimum of four wheels, larger stance, headlights, tail lights, 
+        <p>The Urban Concept Car is a slightly more practical vehicle meant to bridge the gap between the prototype vehicle and the vehicles you see on the road today.
+          It only competes in the Shell Eco-Marathon. Teams are required to design the vehicle with a minimum of four wheels, larger stance, headlights, tail lights,
           turn signals and other practical considerations that the average city vehicle requires today.</p>
       </div>
     </div>
@@ -93,8 +64,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">BRIGGS STRATTON 206</h4>
       <div>
-        <p>The engine used in our Prototype vehicle is a Briggs and Stratton Junior 206. This is standard for all teams in the SAE Supermileage competition. 
-          It is a 205 cc engine with a maximum power rating of 8 horsepower and a torque of 10 ft-lb. One way we increase the fuel efficiency of this engine 
+        <p>The engine used in our Prototype vehicle is a Briggs and Stratton Junior 206. This is standard for all teams in the SAE Supermileage competition.
+          It is a 205 cc engine with a maximum power rating of 8 horsepower and a torque of 10 ft-lb. One way we increase the fuel efficiency of this engine
           is by designing a fuel injection system to replace the original carburetor.</p>
       </div>
     </div>
@@ -104,8 +75,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">HONDA GXH 50</h4>
       <div>
-        <p>The engine used in our Urban Concept vehicle is a Honda GXH 50. It is a 50cc, 1-cylinder, 4-stroke engine with a net power rating of 2.1 horsepower 
-          and a torque of 2.0 ft-lb. For comparison, this engine is similar to those used in lawnmowers. To maximize our fuel efficiency, a fuel injection system 
+        <p>The engine used in our Urban Concept vehicle is a Honda GXH 50. It is a 50cc, 1-cylinder, 4-stroke engine with a net power rating of 2.1 horsepower
+          and a torque of 2.0 ft-lb. For comparison, this engine is similar to those used in lawnmowers. To maximize our fuel efficiency, a fuel injection system
           is also used for this engine.</p>
       </div>
     </div>
@@ -115,7 +86,7 @@ custom_css:
       <a class="anchor" name="chassis" id="chassis"></a>
       <h3 class="text-center">CHASSIS</h3>
     </div>
-    
+
     <div class="col-sm-2">
       <br><br><br>
       <img src="images/ourcars/aluminum.PNG"/>
@@ -123,8 +94,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">2" ALUMINUM HONEYCOMB</h4>
       <div>
-        <p>Our current Prototype vehicle uses a carbon fibre – aluminum sandwich where 2” aluminum honeycomb is sandwiched between layers of carbon fibre. 
-          The use of a thicker aluminum chassis is to compensate for the smaller size of the chassis, which is minimised for weight reduction. 
+        <p>Our current Prototype vehicle uses a carbon fibre – aluminum sandwich where 2” aluminum honeycomb is sandwiched between layers of carbon fibre.
+          The use of a thicker aluminum chassis is to compensate for the smaller size of the chassis, which is minimised for weight reduction.
           The total weight not including the engine is less than 100 lbs.</p>
       </div>
     </div>
@@ -140,8 +111,8 @@ custom_css:
       <h4 class="text-center">1" NOMEX</h4>
       <div>
         <br><br>
-        <p>Our Urban Concept car uses a carbon fibre – nomex sandwich where 1” nomex, a cardboard-like material arranged in a honeycomb structure, is sandwiched 
-          by layers of carbon fibre for structure and strength. The nomex is very light and can support large loads, making it ideal for creating a highly 
+        <p>Our Urban Concept car uses a carbon fibre – nomex sandwich where 1” nomex, a cardboard-like material arranged in a honeycomb structure, is sandwiched
+          by layers of carbon fibre for structure and strength. The nomex is very light and can support large loads, making it ideal for creating a highly
           fuel-efficient car. The total weight of this chassis with all components minus the engine is about 120 lbs.</p>
       </div>
     </div>
@@ -159,8 +130,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">JACKSHAFT</h4>
       <div>
-        <p>The drive-train is a 2-stage fixed gear reduction system. As the name implies, there are two gear reductions in the system from engine to wheel. 
-          By designing our vehicle to run at a maximum speed of 50 km/hr, this system allows our engine to transmit power at its optimal speed to our desired 
+        <p>The drive-train is a 2-stage fixed gear reduction system. As the name implies, there are two gear reductions in the system from engine to wheel.
+          By designing our vehicle to run at a maximum speed of 50 km/hr, this system allows our engine to transmit power at its optimal speed to our desired
           wheel speed with a gear ratio of 9.53.</p>
       </div>
     </div>
@@ -170,8 +141,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">2-GEAR BOX</h4>
       <div>
-        <p>The drive-train includes a planetary gearbox and a 2-gear box. The engine transmits power to the planetary gearbox through a gear reduction, 
-          and from there to the second gearbox. The default position is a 2:1 reduction gear set, and when the clutch is engaged, the 1:1 gear set “overdrives” 
+        <p>The drive-train includes a planetary gearbox and a 2-gear box. The engine transmits power to the planetary gearbox through a gear reduction,
+          and from there to the second gearbox. The default position is a 2:1 reduction gear set, and when the clutch is engaged, the 1:1 gear set “overdrives”
           the 2:1 set, putting the vehicle in second gear.</p>
       </div>
     </div>
@@ -181,7 +152,7 @@ custom_css:
       <a class="anchor" name="steering" id="steering"></a>
       <h3 class="text-center">STEERING</h3>
     </div>
-    
+
     <div class="col-sm-2">
       <br><br><br><br><br><br>
       <img src="images/ourcars/protosteering.png"/>
@@ -189,8 +160,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">HANDLEBARS</h4>
       <div>
-        <p>The Prototype vehicle steering system is similar to that of a motorcycle, where there are two handlebars for steering, a throttle, and braking handlebars. 
-          The space inside for the driver is very limited and the driver drives lying down, so this design allows us to use the confined space efficiently. 
+        <p>The Prototype vehicle steering system is similar to that of a motorcycle, where there are two handlebars for steering, a throttle, and braking handlebars.
+          The space inside for the driver is very limited and the driver drives lying down, so this design allows us to use the confined space efficiently.
           Steering for this vehicle is operated through the front wheels.</p>
       </div>
     </div>
@@ -205,8 +176,8 @@ custom_css:
     <div class="col-sm-3">
       <h4 class="text-center">FORMULA 1 STYLE</h5>
       <div>
-        <p>The Urban Concept steering system is based on Formula 1 style steering. The steering wheel operates like those found in regular cars, and switches for 
-          controls such as the starter motor, lights, and windshield motor are situated in the centre area of the wheel. Steering for this vehicle is operated 
+        <p>The Urban Concept steering system is based on Formula 1 style steering. The steering wheel operates like those found in regular cars, and switches for
+          controls such as the starter motor, lights, and windshield motor are situated in the centre area of the wheel. Steering for this vehicle is operated
           through the front wheels.</p>
       </div>
     </div>

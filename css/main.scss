@@ -179,6 +179,16 @@ p {
     z-index: 1000;
 }
 
+
+#headerimage > img {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+}
+
+
 #background > img {
     width: 100%;
     height: auto;
@@ -537,7 +547,7 @@ p {
     body {
         font: 300 13px/13px Roboto,Arial,Helvetica;
     }
-    
+
     .process ul li {
         margin: 0 0.5em;
     }
@@ -611,7 +621,7 @@ p {
     .navbar-nav > li > a {
         line-height: 1em;
     }
-    
+
     .navbar-toggle {
         margin-top: 12px;
     }
