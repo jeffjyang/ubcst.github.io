@@ -8,6 +8,7 @@ layout: default
 {% include head.html %}
 
 <!-- Header -->
+<!-- NAV OLD
 <div id="top" class="navbar-wrapper">
   <div class="container">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
@@ -21,7 +22,7 @@ layout: default
             <span class="icon-bar"></span>
           </button>
         </div>
-        <!-- Nav -->
+
         <div class="navbar-collapse  collapse">
           <ul class="nav navbar-nav navbar-right">
               <li><a href="/events/">Events</a></li>
@@ -32,16 +33,31 @@ layout: default
 
   </div>
 </div>
+-->
+
+{% include navbar.html %}
+
 <div class="container first">
-  <div class="col-md-12">
-    <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span>{{ page.author }}</span>{% endif %}</p>
-  </div>
-  <div class="col-md-12">
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
+  <div class="container-fluid">
+    <div class="col-md-2"> <!-- spacer -->  </div>
+    <div class="col-md-8">
+      <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span>{{ page.author }}</span>{% endif %}</p>
     </div>
+    <div class="col-md-2"> <!-- spacer -->  </div>
   </div>
+
+  <div class="container-fluid">
+    <div class="col-md-2"> <!-- spacer -->  </div>
+    <div class="col-md-8">
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+    <div class="col-md-2"> <!-- spacer -->  </div>
+  </div>
+
+
 </div>
 {% include footer.html %}
 
