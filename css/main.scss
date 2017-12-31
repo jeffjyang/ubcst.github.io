@@ -188,7 +188,7 @@ p {
 
 }
 
-
+/*
 #background > img {
     width: 100%;
     height: auto;
@@ -199,6 +199,52 @@ p {
     -o-filter: blur(5px);
     filter: blur(5px);
 }
+*/
+
+
+
+#site-description {
+
+}
+
+
+#background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+  url("../images/background.jpg");
+  background-size: cover;
+
+  // HACK bit hacky…
+  height: 50vw;
+  max-height: 50vh;
+
+  display: block;
+
+}
+
+#title {
+  position: relative;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 100%;
+}
+
+// TODO cleanup
+img.logo {
+  height: 75px;
+  padding-right: 10px;
+  @media (max-width: 992px) {
+    height: 60px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+
 
 #team-pic > img {
     width: 100%;
