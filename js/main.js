@@ -1,11 +1,14 @@
+
+/*
 $(document).ready(function($) {
-    $(".scroll a, .navbar-gototop, .gototop").click(function(event) {   
+    $(".scroll a, .navbar-gototop, .gototop").click(function(event) {
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
         $(".scroll li").removeClass('active');
         $(this).parents('li').toggleClass('active');
     });
 });
+*/
 
 var wow = new WOW(
 {
