@@ -181,10 +181,13 @@ p {
 
 
 #headerimage > img {
-    width: 100%;
-    height: auto;
 
-    position: relative;
+      width: 100%;
+      height: auto;
+
+      position: relative;
+
+
 
 }
 
@@ -277,6 +280,10 @@ img.logo {
         background: grey;
         display: inline-block;
     }
+}
+
+#learnMoreAboutUs {
+  background-image: url('../images/aboutus.jpg');
 }
 
 .smalltext{
