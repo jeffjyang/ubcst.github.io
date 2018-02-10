@@ -1,7 +1,7 @@
 ---
 ---
-img { 
-	max-width: 100%; 
+img {
+	max-width: 100%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
@@ -10,15 +10,15 @@ img {
 	}
 	&.car-type {
 		height: 150px;
-	} 
+	}
 }
-
+/*
 @media (min-width: 1400px) {
   .container {
     width: 1400px;
   }
 }
-
+*/
 .table {
 	td {
 		text-align: center;
